@@ -1,1 +1,1 @@
-https://github.com/arni3111/umkmkacamatalotim.git
+https://arni3111.github.io/umkmkacamatalotim/
