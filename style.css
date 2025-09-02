@@ -1,0 +1,225 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: #fafafa; color: #333; }
+
+/* Header */
+header {
+  background: url('assets/images/cover.jpeg') center/cover no-repeat;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+header::after {
+  content: "";
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(0,0,0,0.5);
+}
+header .content {
+  position: relative;
+  z-index: 2;
+}
+header h1 { font-size: 48px; margin-bottom: 0px; }
+header p { font-size: 18px; }
+
+/* Navbar */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  background-color: #006d6d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Header */
+header {
+  background: url('assets/images/cover.jpeg') center/cover no-repeat;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: white;
+  margin-top: 0; /* hilangkan ruang putih */
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+header .content {
+  position: relative;
+  z-index: 2;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+/* Section */
+.section {
+  padding: 60px 0;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #006666;
+  font-size: 28px;
+}
+
+/* Produk */
+.produk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  width: 85%;
+  margin: auto;
+}
+
+.produk {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform .3s, box-shadow .3s;
+}
+
+.produk:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+.produk img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.produk h3 {
+  margin: 15px;
+  color: #008080;
+  font-size: 20px;
+}
+
+.produk p {
+  margin: 10px 15px 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.produk a {
+  display: block;
+  background: #006d6d;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 0 0 15px 15px;
+}
+
+.produk a:hover {
+  background: #004f4f;
+}
+
+/* Kontak */
+.kontak {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  text-align: center;
+  width: 85%;
+  margin: 40px auto 0;
+}
+
+.kontak div {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  flex: 1 1 250px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* Footer */
+footer {
+  background: #006666;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 50px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 32px;
+  }
+
+  nav {
+    justify-content: center;
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  .produk-grid {
+    width: 90%;
+  }
+
+  .kontak {
+    width: 90%;
+  }
+}
